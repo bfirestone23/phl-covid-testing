@@ -1,4 +1,4 @@
-class TestingLocation
+class PHLCovidTesting::TestingLocation
     attr_accessor :name, :phone, :street, :zipcode, :address, :access_type, :facility_type, :referral
     
     include Findable::InstanceMethods
@@ -16,7 +16,7 @@ class TestingLocation
 
     def self.create_from_collection(array)
         array.each do |hash|
-          TestingLocation.new(hash)
+          PHLCovidTesting::TestingLocation.new(hash)
         end
     end
 

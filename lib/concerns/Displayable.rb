@@ -2,8 +2,8 @@ module Displayable
 
     module InstanceMethods 
         def display_all
-            TestingLocation.all.each.with_index(1) {|x, i| puts "\n#{i}. #{x.name}"}
-            all_sites = TestingLocation.all
+            PHLCovidTesting::TestingLocation.all.each.with_index(1) {|x, i| puts "\n#{i}. #{x.name}"}
+            all_sites = PHLCovidTesting::TestingLocation.all
             puts "\nEnter a number to learn more about a testing location, 'main' to return to the main menu, or 'exit' to end the program.\n".colorize(:yellow)
             get_input_all(all_sites)
         end

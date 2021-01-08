@@ -4,7 +4,7 @@ module Findable
 
         def search_by_zipcode(input)
             results = []
-            TestingLocation.all.each.with_index(1) do |x, i|
+            PHLCovidTesting::TestingLocation.all.each.with_index(1) do |x, i|
                 results << x if x.zipcode.to_s == input
             end
 
@@ -24,7 +24,7 @@ module Findable
     
         def search_by_name(input)
             results = []
-            TestingLocation.all.each.with_index(1) do |x, i|
+            PHLCovidTesting::TestingLocation.all.each.with_index(1) do |x, i|
                 results << x if x.name.downcase.include?(input)
             end
             
@@ -52,7 +52,7 @@ module Findable
 
         def search_by_access(input)
             results = []
-            TestingLocation.all.each.with_index(1) do |x, i|
+            PHLCovidTesting::TestingLocation.all.each.with_index(1) do |x, i|
                 results << x if x.access_type.downcase.include?(input)
             end
             

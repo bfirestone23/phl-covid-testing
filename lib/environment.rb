@@ -14,6 +14,6 @@ require_relative "./phl_covid_testing/api"
 require_relative "./phl_covid_testing/testing_location"
 
 
-module PhlCovidTesting
+module PHLCovidTesting
   class Error < StandardError; end
 end

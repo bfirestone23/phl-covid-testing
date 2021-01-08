@@ -1,4 +1,4 @@
-class CLI
+class PHLCovidTesting::CLI
     include Findable::InstanceMethods
     include Displayable::InstanceMethods
     include Inputable::InstanceMethods
@@ -10,7 +10,7 @@ class CLI
     end
 
     def create_sites
-        hash = API.get_data
-        TestingLocation.create_from_collection(hash)
+        hash = PHLCovidTesting::API.get_data
+        PHLCovidTesting::TestingLocation.create_from_collection(hash)
     end
 end
