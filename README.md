@@ -1,7 +1,5 @@
 # PHLCovidTesting
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/phl_covid_testing`. To experiment with that code, run `bin/console` for an interactive prompt.
-
 Find and view details about COVID-19 testing locations located in Philadelphia, PA. You can search by name, zip code, and access type (walk-up or drive-thru), or view a full list and get more information on that testing location.
 
 ## Installation
