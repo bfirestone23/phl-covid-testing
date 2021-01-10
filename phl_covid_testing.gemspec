@@ -9,9 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Brian Firestone"]
   spec.email         = ["bfirestone2339@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Offers several ways to search and view details of COVID-19 testing locations in Philadelphia, PA."
+  spec.homepage      = "https://github.com/bfirestone23/phl_covid_testing"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
