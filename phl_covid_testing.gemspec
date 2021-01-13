@@ -5,7 +5,7 @@ require_relative "lib/phl_covid_testing/version.rb"
 
 Gem::Specification.new do |spec|
   spec.name          = "phl_covid_testing"
-  spec.version       = PhlCovidTesting::VERSION
+  spec.version       = PHLCovidTesting::VERSION
   spec.authors       = ["Brian Firestone"]
   spec.email         = ["bfirestone2339@gmail.com"]
 
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
     spec.metadata["homepage_uri"] = spec.homepage
     spec.metadata["source_code_uri"] = "https://github.com/bfirestone23/phl_covid_testing"
-    spec.metadata["changelog_uri"] = ""
+    #spec.metadata["changelog_uri"] = "https://github.com/bfirestone23/phl_covid_testing"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
