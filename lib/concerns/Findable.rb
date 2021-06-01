@@ -1,12 +1,9 @@
 module Findable
-
     module InstanceMethods
-
         def search_by_zipcode(input)
-            results = []
-            PHLCovidTesting::TestingLocation.all.each.with_index(1) do |x, i|
-                results << x if x.zipcode.to_s == input
-            end
+            results = PHLCovidTesting::TestingLocation.all.map.with_index(1) do |x, i|
+                x if x.zipcode.to_s == input
+            end.compact
 
             if results.length == 0
                 puts "\nNo match found. Please try again.\n".colorize(:red)
@@ -70,8 +67,4 @@ module Findable
             end
         end
     end
-
-    module ClassMethods 
-    end
-
 end

@@ -1,5 +1,4 @@
 module Displayable
-
     module InstanceMethods 
         def display_all
             PHLCovidTesting::TestingLocation.all.each.with_index(1) {|x, i| puts "\n#{i}. #{x.name}"}
@@ -19,9 +18,4 @@ module Displayable
             puts "------------------------------------------------------------------------------------------\n"
         end
     end
-
-
-    module ClassMethods 
-    end
-
 end

@@ -1,7 +1,4 @@
 module Inputable
-    module ClassMethods 
-    end
-
     module InstanceMethods 
         def get_input_main_options
             input = nil
@@ -53,7 +50,7 @@ module Inputable
                 elsif input == "all"
                     display_all
                 elsif !result_array.include?(result_array[input.to_i - 1])
-                    puts "\nInvalid input! Please try again.\n".colorize(:red)
+                    puts "\nNo match found. Please try again.\n".colorize(:red)
                     get_input_sub(result_array)
                 else
                     display_detail(result_array[input.to_i - 1])
@@ -72,7 +69,7 @@ module Inputable
                 elsif input == "main"
                     get_input_main_options
                 elsif !all_sites.include?(all_sites[input.to_i - 1])
-                    puts "\nInvalid input! Please try again.\n".colorize(:red)
+                    puts "\nNo match found. Please try again.\n".colorize(:red)
                     get_input_all(all_sites)
                 elsif input == "all"
                     display_all
