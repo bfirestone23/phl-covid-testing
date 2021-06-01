@@ -2,6 +2,10 @@
 
 Find and view details about COVID-19 testing locations located in Philadelphia, PA. You can search by name, zip code, and access type (walk-up or drive-thru), or view a full list and get more information on that testing location.
 
+## Demo
+
+[Click here to view a demo!](https://drive.google.com/file/d/1ZEUw4LmakPrCvUklisYHxCjJ122pbHTr/view?usp=sharing) 
+
 ## Installation
 
 Add this line to your application's Gemfile:
