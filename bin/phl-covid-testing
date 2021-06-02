@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require "phl-covid-testing"
+require "./lib/phl-covid-testing"
 
 PHLCovidTesting::CLI.new.call
