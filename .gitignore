@@ -6,6 +6,8 @@
 /pkg/
 /spec/reports/
 /tmp/
+.DS_Store
+phl-covid-testing-0.1.0.gem
 
 # rspec failure tracking
 .rspec_status
