@@ -2,6 +2,7 @@ require 'pry'
 require 'colorize'
 require 'open-uri'
 require 'json'
+require 'net/http'
 
 require_relative "./concerns/Displayable"
 require_relative "./concerns/Findable"
