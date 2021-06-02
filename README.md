@@ -11,7 +11,7 @@ Find and view details about COVID-19 testing locations located in Philadelphia, 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'phl_covid_testing'
+gem 'phl-covid-testing'
 ```
 
 And then execute:
@@ -20,7 +20,11 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install phl_covid_testing
+    $ gem install phl-covid-testing
+
+You can then begin the application by executing:
+    $ phl-covid-testing
+
 
 ## Usage
 
