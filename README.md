@@ -23,6 +23,7 @@ Or install it yourself as:
     $ gem install phl-covid-testing
 
 You can then begin the application by executing:
+    
     $ phl-covid-testing
 
 
