@@ -33,4 +33,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "colorize"
   spec.add_dependency "open-uri"
   spec.add_dependency "json"
+  spec.add_dependency 'net/http'
 end
