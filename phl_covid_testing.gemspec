@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require_relative "lib/phl_covid_testing/version.rb"
 
 Gem::Specification.new do |spec|
-  spec.name          = "phl_covid_testing"
+  spec.name          = "phl-covid-testing"
   spec.version       = PHLCovidTesting::VERSION
   spec.authors       = ["Brian Firestone"]
   spec.email         = ["bfirestone2339@gmail.com"]
