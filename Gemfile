@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in phl_covid_testing.gemspec
+# Specify your gem's dependencies in 
 gem 'open-uri'
 gem 'json'
 gem 'pry'

@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["bfirestone2339@gmail.com"]
 
   spec.summary       = "Offers several ways to search and view details of COVID-19 testing locations in Philadelphia, PA."
-  spec.homepage      = "https://github.com/bfirestone23/phl_covid_testing"
+  spec.homepage      = "https://github.com/bfirestone23/phl-covid-testing"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "https://github.com/bfirestone23/phl_covid_testing"
-    #spec.metadata["changelog_uri"] = "https://github.com/bfirestone23/phl_covid_testing"
+    spec.metadata["source_code_uri"] = "https://github.com/bfirestone23/phl-covid-testing"
+    #spec.metadata["changelog_uri"] = "https://github.com/bfirestone23/phl-covid-testing"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
