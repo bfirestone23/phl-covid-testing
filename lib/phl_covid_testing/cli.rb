@@ -5,7 +5,9 @@ class PHLCovidTesting::CLI
 
     def call
         create_sites 
-        puts "\nWelcome to the Philadelphia COVID-19 Testing Finder!\nAll data provided by OpenDataPhilly at: https://www.opendataphilly.org/dataset/covid-19-test-sites".colorize(:yellow)
+        puts "\nWelcome to the Philadelphia COVID-19 Testing Finder!
+        \nAll data provided by OpenDataPhilly at: 
+        https://www.opendataphilly.org/dataset/covid-19-test-sites".colorize(:yellow)
         get_input_main_options
     end
 
