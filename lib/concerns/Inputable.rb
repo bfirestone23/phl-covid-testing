@@ -54,7 +54,10 @@ module Inputable
                     get_input_sub(result_array)
                 else
                     display_detail(result_array[input.to_i - 1])
-                    puts "\nEnter another number to see location details, 'all' to see the full list, 'main' to return to the main menu,\nor 'exit' to end the program.\n".colorize(:yellow)
+                    puts "\nEnter another number to see location details, 
+                    'all' to see the full list, 
+                    'main' to return to the main menu,
+                    \nor 'exit' to end the program.\n".colorize(:yellow)
                     get_input_sub(result_array)
                 end
             end
@@ -75,7 +78,10 @@ module Inputable
                     display_all
                 else
                     display_detail(all_sites[input.to_i - 1])
-                    puts "\nEnter another number to see location details, 'all' to see the full list again, 'main' to return to the main menu,\nor 'exit' to end the program.\n".colorize(:yellow)
+                    puts "\nEnter another number to see location details, 
+                    'all' to see the full list again, 
+                    'main' to return to the main menu,
+                    \nor 'exit' to end the program.\n".colorize(:yellow)
                     get_input_sub(all_sites)
                 end
             end
