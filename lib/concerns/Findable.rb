@@ -14,15 +14,19 @@ module Findable
                 get_input_main_options
             else
                 results.each.with_index(1) {|x, i| puts "\n#{i}. #{x.name}"}
-                puts "\nEnter another number to see location details, 'all' to see the full list of locations, 'main' to return to the main menu,\nor 'exit' to end the program.\n".colorize(:yellow)
+                puts "\nEnter another number to see location details, 
+                'all' to see the full list of locations, 
+                'main' to return to the main menu,
+                \nor 'exit' to end the program.\n".colorize(:yellow)
                 get_input_sub(results)
             end
         end
     
         def search_by_name(input)
+            binding.pry
             results = []
             PHLCovidTesting::TestingLocation.all.each.with_index(1) do |x, i|
-                results << x if x.name.downcase.include?(input)
+                results << x if x.name.downcase[input.downcase]
             end
             
             if results.length == 0
@@ -34,7 +38,10 @@ module Findable
                 get_input_main_options
             else
                 results.each.with_index(1) {|x, i| puts "\n#{i}. #{x.name}"}
-                puts "\nEnter another number to see location details, 'all' to see the full list of locations, 'main' to return to the main menu,\nor 'exit' to end the program.\n".colorize(:yellow)
+                puts "\nEnter another number to see location details, 
+                'all' to see the full list of locations, 
+                'main' to return to the main menu,
+                \nor 'exit' to end the program.\n".colorize(:yellow)
                 get_input_sub(results)
             end
         end
@@ -50,7 +57,7 @@ module Findable
         def search_by_access(input)
             results = []
             PHLCovidTesting::TestingLocation.all.each.with_index(1) do |x, i|
-                results << x if x.access_type.downcase.include?(input)
+                results << x if x.access_type.downcase[input.downcase]
             end
             
             if results.length == 0
@@ -62,7 +69,10 @@ module Findable
                 get_input_main_options
             else
                 results.each.with_index(1) {|x, i| puts "\n#{i}. #{x.name}"}
-                puts "\nEnter another number to see location details, 'all' to see the full list of locations, 'main' to return to the main menu,\nor 'exit' to end the program.\n".colorize(:yellow)
+                puts "\nEnter another number to see location details, 
+                'all' to see the full list of locations, 
+                'main' to return to the main menu,
+                \nor 'exit' to end the program.\n".colorize(:yellow)
                 get_input_sub(results)
             end
         end
