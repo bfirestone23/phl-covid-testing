@@ -1,9 +1,9 @@
 module Findable
     module InstanceMethods
         def search_by_zipcode(input)
-            results = PHLCovidTesting::TestingLocation.all.map.with_index(1) do |x, i|
-                x if x.zipcode.to_s == input
-            end.compact
+            results = PHLCovidTesting::TestingLocation.all.select do |location|
+                location.zipcode.to_s == input
+            end
 
             if results.length == 0
                 puts "\nNo match found. Please try again.\n".colorize(:red)
@@ -23,10 +23,8 @@ module Findable
         end
     
         def search_by_name(input)
-            binding.pry
-            results = []
-            PHLCovidTesting::TestingLocation.all.each.with_index(1) do |x, i|
-                results << x if x.name.downcase[input.downcase]
+            results = PHLCovidTesting::TestingLocation.all.select do |location|
+                location.name.downcase[input.downcase]
             end
             
             if results.length == 0
@@ -55,9 +53,8 @@ module Findable
         end
 
         def search_by_access(input)
-            results = []
-            PHLCovidTesting::TestingLocation.all.each.with_index(1) do |x, i|
-                results << x if x.access_type.downcase[input.downcase]
+            results = PHLCovidTesting::TestingLocation.all.select do |location|
+                location.access_type.downcase[input.downcase]
             end
             
             if results.length == 0
