@@ -4,16 +4,5 @@ require 'open-uri'
 require 'json'
 require 'net/http'
 
-require_relative "./concerns/Displayable"
-require_relative "./concerns/Findable"
-require_relative "./concerns/Inputable"
-
-require_relative "./phl_covid_testing/version"
-require_relative "./phl_covid_testing/cli"
-require_relative "./phl_covid_testing/api"
-require_relative "./phl_covid_testing/testing_location"
-
-
-module PHLCovidTesting
-  class Error < StandardError; end
-end
+require_relative "./concerns"
+require_relative "./phl_covid_testing"
